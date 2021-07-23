@@ -6,7 +6,7 @@ exports.run = async(client, message, args) => {
 let mentionChannel = message.mentions.channels.first();
   db.set(`processChannel.${message.guild.id}`, mentionChannel.id);
   message.channel.send(new Discord.MessageEmbed()
-  .setAuthor("EtherZ Bot",client.user.avatarURL())
+  .setAuthor("feezy",client.user.avatarURL())
   .setColor("#f8f8f9")
   .setDescription(`**<a:tenor:807201675738611800> | Kanal başarıyla ${mentionChannel} olarak ayarlandı**`)
   .setFooter("Tüm Hakları Saklıdır."))
